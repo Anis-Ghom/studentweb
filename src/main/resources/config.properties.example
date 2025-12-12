@@ -1,0 +1,25 @@
+# ====================================
+# Configuration Base de Données
+# ====================================
+# INSTRUCTIONS :
+# 1. Copier ce fichier vers config.properties
+# 2. Remplacer YOUR_USERNAME et YOUR_PASSWORD par vos identifiants MySQL
+# 3. Ne pas versionner config.properties (déjà dans .gitignore)
+
+# Driver JDBC MySQL
+db.driver=com.mysql.cj.jdbc.Driver
+
+# URL de connexion
+db.url=jdbc:mysql://localhost:3306/studentdb?useSSL=false&serverTimezone=UTC
+
+# Identifiants MySQL (À MODIFIER)
+db.username=YOUR_USERNAME
+db.password=YOUR_PASSWORD
+
+# Nom JNDI (ne pas modifier)
+db.jndi.name=jdbc/studentdb
+
+# Configuration du pool de connexions
+db.pool.maxTotal=20
+db.pool.maxIdle=5
+db.pool.maxWaitMillis=10000
