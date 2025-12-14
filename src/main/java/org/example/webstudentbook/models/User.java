@@ -6,14 +6,6 @@ public class User {
     private String password;
     private String role; // "admin" ou "user"
 
-    public User() {}
-
-    public User(String username, String password) {
-        this.username = username;
-        this.password = password;
-        this.role = "user";
-    }
-
     public User(int id, String username, String password, String role) {
         this.id = id;
         this.username = username;
